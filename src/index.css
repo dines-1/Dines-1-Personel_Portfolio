@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #060d14;
+    --bg2: #0a1520;
+    --card: #0c1928;
+    --border-dim: rgba(56, 189, 248, 0.1);
+    --border-glow: rgba(56, 189, 248, 0.25);
+    --sky: #38bdf8;
+    --green: #39d98a;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #060d14;
+    font-family: 'Sora', sans-serif;
+    color: #e8f4fd;
+    overflow-x: hidden;
+  }
+  
+  /* Grid background pattern */
+  .grid-bg {
+    background-image: 
+      linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+    background-size: 52px 52px;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f1e2e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2c5a7a;
+    border-radius: 8px;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background: linear-gradient(120deg, #38bdf8, #39d98a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .tech-tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.74rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    background: rgba(57, 217, 138, 0.09);
+    border: 1px solid rgba(57, 217, 138, 0.2);
+    color: #39d98a;
+  }
+  
+  .tech-tag-sky {
+    background: rgba(56, 189, 248, 0.09);
+    border-color: rgba(56, 189, 248, 0.2);
+    color: #7dd3fc;
+  }
+}
+
+@layer utilities {
+  .animate-blink {
+    animation: blink 2s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.4;
+      transform: scale(0.75);
+    }
+  }
+}
