@@ -41,3 +41,4 @@ package.json
 vite.config.js
 tailwind.config.js
 postcss.config.js
+.vscode/

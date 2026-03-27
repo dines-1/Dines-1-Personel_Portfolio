@@ -12,10 +12,7 @@ const Projects = () => {
           {portfolioData.projects.map((project, idx) => (
             <Reveal key={idx}>
               <div className="bg-card border border-sky/10 rounded-2xl overflow-hidden transition-all duration-300 hover:border-sky/40 hover:-translate-y-2">
-                <div className={`h-44 bg-gradient-to-br ${project.gradient} flex items-center justify-center relative overflow-hidden`}>
-                  <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-sky to-green"></div>
-                  <i className={`fas ${project.icon} text-5xl ${project.iconColor}`}></i>
-                </div>
+              
                 <div className="p-5 flex flex-col gap-3">
                   <h3 className="font-semibold flex items-center gap-2">
                     <i className={`fas ${project.icon} text-sky text-sm`}></i>
@@ -32,12 +29,7 @@ const Projects = () => {
                   <div className="flex gap-3 pt-2 border-t border-sky/10">
                     <a href={project.github} className="font-mono text-xs text-sky flex items-center gap-1.5 hover:text-green transition-colors">
                       <i className="fab fa-github"></i> GitHub
-                    </a>
-                    {project.demo && (
-                      <a href={project.demo} className="font-mono text-xs text-sky flex items-center gap-1.5 hover:text-green transition-colors">
-                        <i className="fas fa-arrow-up-right-from-square"></i> Live Demo
-                      </a>
-                    )}
+                    </a> 
                   </div>
                 </div>
               </div>

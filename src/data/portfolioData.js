@@ -6,7 +6,7 @@ export const portfolioData = {
   github: "https://github.com/dines-1",
   linkedin: "https://www.linkedin.com/in/dinesh-kadel-7aa589292/",
   twitter: "https://twitter.com/dineshkadel",
-  
+
   education: [
     {
       degree: "Bachelor in Computer Application (BCA)",
@@ -26,7 +26,7 @@ export const portfolioData = {
       icon: "fa-school"
     }
   ],
-  
+
   skills: [
     {
       category: "Frontend",
@@ -37,28 +37,27 @@ export const portfolioData = {
     {
       category: "Backend",
       icon: "fa-server",
-      skills: ["Node.js", "Express.js", "NestJS", "REST APIs","TypeScript","Socket.io","JWT","Java","PHP"],
+      skills: ["Node.js", "Express.js", "NestJS", "REST APIs", "TypeScript", "Socket.io", "JWT", "Java", "PHP"],
       variant: "sky"
     },
     {
       category: "Database",
       icon: "fa-database",
-      skills: ["MongoDB", "Mongoose", "SQL","PostgreSQL"],
+      skills: ["MongoDB", "Mongoose", "SQL", "PostgreSQL"],
       variant: "default"
     },
     {
       category: "Tools",
       icon: "fa-wrench",
-      skills: ["Git", "GitHub", "VS Code", "Postman", "Docker","Linux","Kubernetes"],
+      skills: ["Git", "GitHub", "VS Code", "Postman", "Docker", "Linux", "Kubernetes"],
       variant: "sky"
     }
   ],
-  
+
   projects: [
     {
       name: "Learning Management System",
       description: "Full-featured online store with course listings, Category management, JWT auth, and payment integration with ESewa. Built with the MERN stack.",
-      icon: "fa-store",
       gradient: "from-cyan-900/30 to-blue-900/30",
       iconColor: "text-sky",
       stack: ["React", "Node.js", "MongoDB", "Express"],
@@ -68,7 +67,6 @@ export const portfolioData = {
     {
       name: "Chat Application",
       description: "Real-time messaging app using Socket.io with rooms, private messages, and live online status indicators.",
-      icon: "fa-message",
       gradient: "from-green-900/30 to-emerald-900/30",
       iconColor: "text-green",
       stack: ["React", "Express", "Socket.io"],
@@ -78,31 +76,39 @@ export const portfolioData = {
     {
       name: "Task Manager API",
       description: "RESTful API built with NestJS and TypeScript. Features JWT auth, CRUD operations, and role-based access control.",
-      icon: "fa-code-branch",
       gradient: "from-purple-900/30 to-indigo-900/30",
       iconColor: "text-sky-light",
       stack: ["NestJS", "TypeScript", "MongoDB"],
       github: "#",
       demo: null
     },
-     {
+    {
       name: "HomeCare Service",
       description: "A web-based application for booking household services . Features Authentication, browse services, book appointments,admin control and make payments through integrated payment gateways. ",
-      icon: "fa-message",
       gradient: "from-green-900/30 to-emerald-900/30",
       iconColor: "text-green",
-      stack: ["HTML", "CSS", "JavaScript","PHP","MySQL"],
+      stack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       github: "https://github.com/dines-1/Local_household_service_booking",
       demo: "#"
     },
+    ,
+    {
+      name: "E-commerce Website: Saasto Bazaar",
+      description: "A web-based application for online shopping . Features Authentication, browse products, add to cart,admin control and make payments through integrated payment gateways. ",
+      gradient: "from-green-900/30 to-emerald-900/30",
+      iconColor: "text-green",
+      stack: ["HTML", "Tailwind CSS", "JavaScript", "PHP", "MySQL"],
+      github: "https://github.com/dines-1/E_commerce-_website-About_-local-_mart",
+      demo: "#"
+    },
   ],
-  
+
   about: {
     description: [
-      "Hi, I'm a fullstack developer and 3rd-year BCA student from Dhading, Nepal. I'm passionate about building scalable web applications and enjoy working across the entire stack — from designing databases to building responsive frontends.",
+      "Hi, I'm a fullstack developer and 3rd-year BCA student at National College of Computer Studies, Tribhuvan University. I'm passionate about building scalable web applications and enjoy working across the entire stack — from designing databases to building responsive frontends.",
       "I'm always exploring new technologies and love turning ideas into real products. Outside of code, I enjoy open source contributions and connecting with the developer community."
     ]
   },
-  
+
   interests: ["Web Dev", "APIs", "Open Source", "UI/UX"]
 };
