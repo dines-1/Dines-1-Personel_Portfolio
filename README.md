@@ -65,9 +65,9 @@ Compatible with:
 
 ##  Contact
 
-- Email: `dinesh.kadel@example.com`
-- LinkedIn: `https://www.linkedin.com/in/dinesh-kadel/`
-- GitHub: `https://github.com/dinesh-kadel`
+- Email: `dinesh.kadel11@gmail.com`
+- LinkedIn: `https://www.linkedin.com/in/dinesh-kadel-7aa589292/`
+- GitHub: `https://github.com/dinesh-1`
 
 ---
 
